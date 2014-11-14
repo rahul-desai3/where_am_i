@@ -1,6 +1,6 @@
 {
-  "name": "Where am I",
-  "description": "Where the fuck are you?",
+  "name": "Where am I?",
+  "description": "I think I am lost. :-/",
   "launch_path": "/index.html",
   "version": "1",
   "developer": {
@@ -8,8 +8,8 @@
     "url": "http://in.linkedin.com/in/rahuldesai1/"
   },
   "icons": {
-    "512": "/images/app_icon_512.png",
-    "128": "/images/app_icon_128.png"
+    "512": "/logos/logo-512.png",
+    "128": "/logos/logo-128.png"
   },
   "type": "web",
   "permissions": {
