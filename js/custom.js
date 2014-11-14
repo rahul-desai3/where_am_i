@@ -1,29 +1,5 @@
 var map;
 
-$.noConflict();
-
-jQuery(document).ready(function( $ ) {
-
-    console.log('ready');
-    
-    $("#search").hide();
-
-    $("#search").click(function(){
-        initialize();
-        $(this).slideUp("fast");
-        $("#show-hide").slideDown("fast");
-    });
-
-    $("#show-hide").click(function(){
-        console.log('here');
-        $(this).slideUp("fast");
-        $("#search").text("Where am I now?");
-        $("#search").slideDown("fast");
-    });
-
-});
-
-
 function initialize() {
     var mapOptions = {
         zoom: 13
@@ -90,3 +66,12 @@ function handleNoGeolocation(errorFlag) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+var refreshButton = document.getElementById("refresh");
+
+refreshButton.addEventListener('click', 
+    function(){
+        location.reload();
+    },
+    false
+);

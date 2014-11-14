@@ -7,23 +7,23 @@ body{
     font-size: 62.5%;        /* so, 10px = 1rem */
 }
 
-#button-container{
-}
-
-button{
-    color: white;
-    background: #4196c2;
-    border: 0rem;
-    border-radius: 0rem 0rem 0.5rem 0.5rem;
+button#refresh{
+    color: #000000;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: none repeat scroll 0% 0% #ffffff;
+    border: 0.1rem solid #cccccc;
+    border-radius: 50%;
     padding: 0.5rem;
-    outline: none;
+    outline: medium none;
     display: block;
-    margin: 0 auto;
-}
-
-#show-hide{
-    height: 0.5rem;
     line-height: 0;
+    left: 50%;
+    position: absolute;
+    bottom: 1rem;
+    margin-left: -1.5rem;
+    box-shadow: 0rem 0.2rem 0.5rem 0rem grey;
 }
 
 #map-canvas{
@@ -32,8 +32,4 @@ button{
     top: 0;
     width: 100%;
     z-index: -1;
-}
-
-i {
-    margin: -10px 0 0;
 }
