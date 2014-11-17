@@ -6,11 +6,9 @@ function initialize() {
     };
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     
-    // Try HTML5 geolocation
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = new google.maps.LatLng(position.coords.latitude,
-                                             position.coords.longitude);
+            var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
             
             var infowindow = new google.maps.InfoWindow({
                 map: map,
@@ -36,6 +34,11 @@ function initialize() {
             google.maps.event.addListener(infowindow,'closeclick',function(){
                 cityCircle.setMap(null);
             });
+
+            // update email line element
+            var emailElement = document.getElementById("email");
+            emailElement.style.display = 'block';
+            emailElement.href = "mailto:?subject=Hey,%20I%20am%20here!&body=I%20am%20within%20~0.6mile/1km%20radius%20of%20this%20location:%20https://www.google.com/maps/place/" + position.coords.latitude + "," + position.coords.longitude;
             
         }, function() {
             handleNoGeolocation(true);

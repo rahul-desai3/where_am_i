@@ -7,23 +7,35 @@ body{
     font-size: 62.5%;        /* so, 10px = 1rem */
 }
 
-button#refresh{
-    color: #000000;
-    font-size: 2rem;
-    width: 3rem;
-    height: 3rem;
+button#refresh, a#email{
+    color: #000000;    
     background: none repeat scroll 0% 0% #ffffff;
     border: 0.1rem solid #cccccc;
     border-radius: 50%;
     padding: 0.5rem;
-    outline: medium none;
-    display: block;
-    line-height: 0;
-    left: 50%;
+    outline: medium none;    
+    line-height: 0;    
     position: absolute;
-    bottom: 1rem;
-    margin-left: -1.5rem;
+    bottom: 1rem;    
     box-shadow: 0rem 0.2rem 0.5rem 0rem grey;
+}
+
+button#refresh{
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    left: 50%;
+    margin-left: -1.5rem;
+}
+
+a#email{
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 #map-canvas{
