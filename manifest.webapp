@@ -13,7 +13,9 @@
   },
   "type": "web",
   "permissions": {
-    "geolocation": {}
+    "geolocation": {
+      "description": "This permission is to request the Web API for GeoLocation so we can help you find your location."
+    }
   },
   "default_locale": "en",
   "fullscreen": "true"
