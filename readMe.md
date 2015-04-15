@@ -6,8 +6,9 @@ A simple application of HTML5 GeoLocation API to locate yourself on Google Maps,
 *Please note* that the location is as accurate as the latitude and longitude fetched by `geolocation.getCurrentPosition()`.
 
 
-[Online Demo]
+<!--[Online Demo]
 ----
+-->
 
 
 Version
