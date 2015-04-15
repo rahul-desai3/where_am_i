@@ -38,7 +38,12 @@ function initialize() {
             // update email line element
             var emailElement = document.getElementById("email");
             emailElement.style.display = 'block';
-            emailElement.href = "mailto:?subject=Hey,%20I%20am%20here!&body=I%20am%20within%20~0.6mile/1km%20radius%20of%20this%20location:%20https://www.google.com/maps/place/" + position.coords.latitude + "," + position.coords.longitude;
+
+            // set email content
+            var emailSubject = "Hey, this is my location!";
+            var emailBody = "I am within ~0.6mile/1km radius of the following location on Google Map: https://www.google.com/maps/place/" + position.coords.latitude + "," + position.coords.longitude;
+            
+            emailElement.href = encodeURI("mailto:?subject=" + emailSubject + "&body=" + emailBody);
             
         }, function() {
             handleNoGeolocation(true);
