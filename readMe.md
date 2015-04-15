@@ -13,13 +13,13 @@ A simple application of HTML5 GeoLocation API to locate yourself on Google Maps,
 Version
 ----
 
-1
+1.0
 
 
 Coming soon...
 ----
     
-  - Share location by email
+  - Complete address from latitude and longitude
 
 
 Technologies
